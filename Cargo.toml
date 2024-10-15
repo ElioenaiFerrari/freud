@@ -1,0 +1,13 @@
+[package]
+name = "freud"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = { version = "4.9.0", features = ["rustls-0_23"] }
+actix-ws = "0.3.0"
+ollama-rs = { version = "0.2.1", features = ["stream", "tokio-stream"] }
+serde_json = "1.0.128"
+tokio = { version = "1.40.0", features = ["full"] }
+tokio-stream = { version = "0.1.16", features = ["full"] }
